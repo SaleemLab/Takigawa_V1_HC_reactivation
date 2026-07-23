@@ -6,6 +6,7 @@ This repository contains the analysis scripts to replicate the core findings fro
 > *Masahiro Takigawa, D. Tong, E. A. B. Horrocks, A. B. Saleem, and D. Bendor*
 > bioRxiv, 2026. DOI: [10.64898/2026.06.12.731367v1](https://www.biorxiv.org/content/10.64898/2026.06.12.731367v1)
 
+## Code strcture
 
 ### Visualisation of track-selective activity in V1 and HC during VR track running
 *   [V1_HC_Track_FR_distribution.m](file:///C:/Users/masah/Desktop/V1_HC_reactivation/V1_HC_Track_FR_distribution.m): Calculation and visualisation of spatial map and firing rate distribution on Track L and Track R for left and right V1 and hippocampus (HPC)
@@ -26,5 +27,14 @@ These scripts calculate a sliding-window Area Under the Curve (AUC) metric to sh
 *   [GAM_Coherence.R]: Fits Generalized Additive Mixed Models (GAMMs) using `mgcv::bam` to model non-linear oscillatory effects (SO phase, spindle power, ripple power) on V1-HC reactivation cohernece (Geometric Mean of V1 and HC track bias) with random effects for Animal ID and Session ID. Includes a non-parametric case bootstrapping module to yield 95% confidence intervals for effect sizes.
 
 
-### Data
-All processed data needed to run the code is found within `/processed_data` folder.
+## Instruction
+All processed data needed to run the code is found within `/processed_data` folder. Simply download this github repository to run the code for visualization.
+
+## Expected Run Time
+
+- **Plotting scripts:** typically under 30 seconds.
+- **Scripts involving shuffling** (e.g., permutation tests): roughly 10–30 minutes, depending on data size and number of iterations.
+
+## Requirements
+* Tested using MATLAB 2024a
+* Tested using RStudio 2026.04.0 (https://posit.co/download/rstudio-desktop/)
