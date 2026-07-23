@@ -36,5 +36,5 @@ All processed data needed to run the code is found within `/processed_data` fold
 - **Scripts involving shuffling** (e.g., permutation tests): roughly 10–30 minutes, depending on data size and number of iterations.
 
 ## Requirements
-* Tested using MATLAB 2024a
+* Tested using MATLAB 2024a (https://uk.mathworks.com/products/matlab.html)
 * Tested using RStudio 2026.04.0 (https://posit.co/download/rstudio-desktop/)
